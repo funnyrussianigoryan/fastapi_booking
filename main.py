@@ -1,8 +1,6 @@
 from fastapi import FastAPI
+from app.bookings.router import router as hotels
 
 app = FastAPI()
 
-
-@app.get("/hotels")
-def get_hotels():
-    return "testalembic "
+app.include_router(hotels)
