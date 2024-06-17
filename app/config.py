@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_PASS: str
     DB_NAME: str
+    TOKEN_ALG: str
+    TOKEN_KEY: str
 
     @property
     def DATABASE_URL(self):
